@@ -1,0 +1,112 @@
+curl_multi_add_handle
+start_timeout called timeout_ms=0, tm=1620566940:807
+curl_multi_add_handle
+start_timeout called timeout_ms=0, tm=1620566940:807
+curl_multi_add_handle
+start_timeout called timeout_ms=0, tm=1620566940:807
+add_download end tm=1620566940:807
+*   Trying 192.168.12.70:8004...
+on_timeout before multi_socket_action, handles=0, tm=1620566940:807
+handle_socket called: action=2,tm=1620566940:807
+* Found bundle for host 192.168.12.70: 0x55e7ddc17300 [serially]
+* Hostname 192.168.12.70 was found in DNS cache
+*   Trying 192.168.12.70:8004...
+handle_socket called: action=2,tm=1620566940:808
+* Found bundle for host 192.168.12.70: 0x55e7ddc17300 [serially]
+* Hostname 192.168.12.70 was found in DNS cache
+*   Trying 192.168.12.70:8004...
+handle_socket called: action=2,tm=1620566940:808
+start_timeout called timeout_ms=199, tm=1620566940:808
+on_timeout after multi_socket_action, handles=3, tm=1620566940:808
+on_timeout after check_multi_info, handles=3, tm=1620566940:808
+**************************************************************
+* Connected to 192.168.12.70 (192.168.12.70) port 8004 (#0)
+> GET /posts/f16f2c08-58fa-48fe-bc9b-e50ed33e24d4 HTTP/1.1
+Host: 192.168.12.70:8004
+Accept: */*
+
+curl_perform before multi_socket_action, event=2,tm=1620566940:809
+handle_socket called: action=1,tm=1620566940:809
+curl_perform after multi_socket_action, handles=3,tm=1620566940:809
+curl_perform after check_multi_info, event=2,tm=1620566940:809
+===============================================================
+* Connected to 192.168.12.70 (192.168.12.70) port 8004 (#1)
+> GET /posts/f16f2c08-58fa-48fe-bc9b-e50ed33e24d4 HTTP/1.1
+Host: 192.168.12.70:8004
+Accept: */*
+
+curl_perform before multi_socket_action, event=2,tm=1620566940:809
+handle_socket called: action=1,tm=1620566940:810
+curl_perform after multi_socket_action, handles=3,tm=1620566940:810
+curl_perform after check_multi_info, event=2,tm=1620566940:810
+===============================================================
+* Connected to 192.168.12.70 (192.168.12.70) port 8004 (#2)
+> GET /posts/f16f2c08-58fa-48fe-bc9b-e50ed33e24d4 HTTP/1.1
+Host: 192.168.12.70:8004
+Accept: */*
+
+curl_perform before multi_socket_action, event=2,tm=1620566940:810
+handle_socket called: action=1,tm=1620566940:810
+curl_perform after multi_socket_action, handles=3,tm=1620566940:810
+curl_perform after check_multi_info, event=2,tm=1620566940:810
+===============================================================
+on_timeout before multi_socket_action, handles=3, tm=1620566941:18
+start_timeout called timeout_ms=29790, tm=1620566941:18
+on_timeout after multi_socket_action, handles=3, tm=1620566941:18
+on_timeout after check_multi_info, handles=3, tm=1620566941:18
+**************************************************************
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Content-Type: application/json;charset=UTF-8
+< Content-Length: 96
+< 
+curl_perform before multi_socket_action, event=1,tm=1620566950:813
+curl_perform after multi_socket_action, handles=3,tm=1620566950:813
+curl_perform after check_multi_info, event=1,tm=1620566950:813
+===============================================================
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Content-Type: application/json;charset=UTF-8
+< Content-Length: 96
+< 
+curl_perform before multi_socket_action, event=1,tm=1620566950:813
+curl_perform after multi_socket_action, handles=3,tm=1620566950:813
+curl_perform after check_multi_info, event=1,tm=1620566950:813
+===============================================================
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Content-Type: application/json;charset=UTF-8
+< Content-Length: 96
+< 
+curl_perform before multi_socket_action, event=1,tm=1620566950:813
+curl_perform after multi_socket_action, handles=3,tm=1620566950:813
+curl_perform after check_multi_info, event=1,tm=1620566950:813
+===============================================================
+* Connection #2 to host 192.168.12.70 left intact
+curl_perform before multi_socket_action, event=1,tm=1620566950:813
+{"id":"f16f2c08-58fa-48fe-bc9b-e50ed33e24d4","title":"Post One","content":"Content of Post One"}handle_socket called: action=4,tm=1620566950:813
+curl_perform after multi_socket_action, handles=2,tm=1620566950:813
+
+message = 1, pending = 0, tid = 140035125147456
+3720490960d, http://192.168.12.70:8004/posts/f16f2c08-58fa-48fe-bc9b-e50ed33e24d4 DONE
+curl_perform after check_multi_info, event=1,tm=1620566950:814
+===============================================================
+* Connection #1 to host 192.168.12.70 left intact
+curl_perform before multi_socket_action, event=1,tm=1620566950:814
+{"id":"f16f2c08-58fa-48fe-bc9b-e50ed33e24d4","title":"Post One","content":"Content of Post One"}handle_socket called: action=4,tm=1620566950:814
+curl_perform after multi_socket_action, handles=1,tm=1620566950:814
+
+message = 1, pending = 0, tid = 140035125147456
+3720485696d, http://192.168.12.70:8004/posts/f16f2c08-58fa-48fe-bc9b-e50ed33e24d4 DONE
+curl_perform after check_multi_info, event=1,tm=1620566950:814
+===============================================================
+* Connection #0 to host 192.168.12.70 left intact
+curl_perform before multi_socket_action, event=1,tm=1620566950:814
+{"id":"f16f2c08-58fa-48fe-bc9b-e50ed33e24d4","title":"Post One","content":"Content of Post One"}handle_socket called: action=4,tm=1620566950:814
+start_timeout called timeout_ms=-1, tm=1620566950:814
+curl_perform after multi_socket_action, handles=0,tm=1620566950:814
+
+message = 1, pending = 0, tid = 140035125147456
+3720480432d, http://192.168.12.70:8004/posts/f16f2c08-58fa-48fe-bc9b-e50ed33e24d4 DONE
+curl_perform after check_multi_info, event=1,tm=1620566950:814
+===============================================================
